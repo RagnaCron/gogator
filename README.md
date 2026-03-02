@@ -157,9 +157,9 @@ In my case (macOS) the `.gatorconfig.json` file has the following content:
 - `gator reset` This command is !!!DANGEROUS!!! it will remove all the data out of the database...
 - `gator users` List all users.
 - `gator agg <time_duration>` This command will check the saved feeds for updates and save the relevant posts, for the logged in user. Time duration isin form `1s`, `1m`or `1h`, it can be combined: `1m40s` as an example. Run this command in a separate cli session.
-- `gator addfeed `
-- feeds
-- follow
-- following
-- unfollow
-- browse
+- `gator addfeed <name> <url>` Add a new RSS Feed, given the feed name and the URL.
+- `gator feeds` List all added feeds. 
+- `gator follow <url>` Follow an existing feed.
+- `gator following` List all followed feeds.
+- `gator unfollow <url>` Unfollow a feed.
+- `gator browse <optional_limit>` Lock at the saved post from the `agg` command. Pass an optional limit which defaults to 2 if not set.
